@@ -26,6 +26,7 @@ public class BookService {
     }
 
     public List<EnhancedBook> findAllBooks() {
+
         List<EnhancedBook> bookList = new ArrayList<>();
         Iterable<BookEntity> bookEntityList = bookRepository.findAll();
         System.out.println("findAllBooks | bookEntityList: " + bookEntityList);
